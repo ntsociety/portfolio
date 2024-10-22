@@ -648,9 +648,13 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .mb-3 {
@@ -677,6 +681,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -687,6 +695,10 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .block {
@@ -725,8 +737,40 @@ video {
   height: 2px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-\[450px\] {
+  height: 450px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[520px\] {
+  height: 520px;
+}
+
+.h-\[620px\] {
+  height: 620px;
+}
+
+.h-\[630px\] {
+  height: 630px;
 }
 
 .w-0 {
@@ -793,8 +837,16 @@ video {
   gap: 2rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
 }
 
 .rounded-\[10px\] {
@@ -825,6 +877,14 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-\[100\%\] {
+  border-radius: 100%;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -847,6 +907,11 @@ video {
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -889,8 +954,21 @@ video {
   padding-right: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .text-2xl {
