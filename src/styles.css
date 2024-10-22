@@ -1,0 +1,28 @@
+#services .grid .grid-item:hover .bot {
+  /* display: block; */
+  color: white;
+}
+#services .grid .grid-item:hover .to {
+  color: white !important;
+}
+#services .grid .grid-item:hover .bi,
+#services .grid .grid-item:hover h3,
+#services .grid .grid-item:hover p {
+}
+.profile-back {
+}
+
+/* portfolio */
+#portfolio .grid-item h3:hover span {
+  display: inline-block;
+  animation-duration: 3s;
+}
+#portfolio .grid-item img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+/* contact */
+#contact img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
