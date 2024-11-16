@@ -10,13 +10,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <script src="jquery.min.js"></script>
+    <!-- Owl carrousel -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
   </head>
 
   <style>
-    .footer {
-      /* default styles applied first */
-    }
-
     @media screen and (min-height: 820px) /* height >= 820 px */ {
       /* .footer {
             position: absolute;
@@ -78,7 +83,7 @@
         class="flex flex-col uppercase gap-4 m-10 text-[14px] items-end font-semibold"
       >
         <li>
-          <a href="#home" class="hover:text-primary">Accueil</a>
+          <a href="#home" class="hover:text-primary text-primary">Accueil</a>
         </li>
         <li><a href="#services" class="hover:text-primary">Services</a></li>
         <li><a href="#protfolio" class="hover:text-primary">Portfolio</a></li>
@@ -99,7 +104,7 @@
     </div>
     <!-- fin mobile nav -->
     <main class="md:mx-36 mx-6">
-      <header class="mb-16 py-12" id="home">
+      <header class="mb-16 py-12 section-item" id="home">
         <div
           class="flex md:flex-nowrap flex-wrap justify-between items-center gap-28"
         >
@@ -152,10 +157,23 @@
             />
           </div>
         </div>
+        <!-- Technologies -->
+        <div class="owl-carousel">
+          <div>your content 1</div>
+          <div>your content 2</div>
+          <div>your content 3</div>
+          <div>your content 1</div>
+          <div>your content 2</div>
+          <div>your content 3</div>
+          <div>your content 1</div>
+          <div>your content 2</div>
+          <div>your content 3</div>
+        </div>
       </header>
 
       <hr class="h-[2px] bg-gray-500" />
-      <section id="services" class="my-16">
+      <!-- services -->
+      <section id="services" class="my-16 section-item">
         <h4 class="text-primary font-medium uppercase">Services</h4>
         <h1 class="text-4xl font-bold">Ce que je fais</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-12">
@@ -163,10 +181,32 @@
             class="grid-item hover:translate-x-1 duration-500 hover:bg-primary cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
           >
             <i class="bi bi-list text-5xl to text-primary hover:text-white"></i>
-            <h3 class="text-2xl font-bold my-4">App Development</h3>
+            <h3 class="text-2xl font-bold my-4">Dévelopement Web</h3>
             <p class="mb-3">
-              Je me jette dans les hautes herbes au bord du ruisseau pendant que
-              je m'allonge proche de la terre.
+              Création de sites web modernes, optimisés et adaptés à tous les
+              appareils.
+            </p>
+            <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
+          </div>
+          <div
+            class="grid-item hover:bg-primary hover:translate-x-1 duration-500 cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
+          >
+            <i class="bi bi-list text-4xl text-primary to"></i>
+            <h3 class="text-2xl font-bold my-4">Dévelopement Mobile</h3>
+            <p class="mb-3">
+              Conception d'applications mobiles performantes et intuitives pour
+              iOS et Android.
+            </p>
+            <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
+          </div>
+          <div
+            class="grid-item hover:translate-x-1 duration-500 hover:bg-primary cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
+          >
+            <i class="bi bi-list text-4xl to text-primary hover:text-white"></i>
+            <h3 class="text-2xl font-bold my-4">Dévelopement Desktop</h3>
+            <p class="mb-3">
+              Applications de bureau robustes, pensées pour optimiser la
+              productivité.
             </p>
             <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
           </div>
@@ -174,10 +214,10 @@
             class="grid-item hover:bg-primary hover:translate-x-1 duration-500 cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
           >
             <i class="bi bi-list text-5xl text-primary to"></i>
-            <h3 class="text-2xl font-bold my-4">App Development</h3>
+            <h3 class="text-2xl font-bold my-4">Marketing Digital</h3>
             <p class="mb-3">
-              Je me jette dans les hautes herbes au bord du ruisseau pendant que
-              je m'allonge proche de la terre.
+              Stratégies digitales efficaces pour accroître la visibilité et
+              atteindre vos objectifs.
             </p>
             <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
           </div>
@@ -185,10 +225,9 @@
             class="grid-item hover:translate-x-1 duration-500 hover:bg-primary cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
           >
             <i class="bi bi-list text-5xl to text-primary hover:text-white"></i>
-            <h3 class="text-2xl font-bold my-4">App Development</h3>
+            <h3 class="text-2xl font-bold my-4">Design graphique</h3>
             <p class="mb-3">
-              Je me jette dans les hautes herbes au bord du ruisseau pendant que
-              je m'allonge proche de la terre.
+              Des visuels créatifs et impactants pour donner vie à vos idées.
             </p>
             <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
           </div>
@@ -196,38 +235,17 @@
             class="grid-item hover:bg-primary hover:translate-x-1 duration-500 cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
           >
             <i class="bi bi-list text-5xl text-primary to"></i>
-            <h3 class="text-2xl font-bold my-4">App Development</h3>
+            <h3 class="text-2xl font-bold my-4">Sécurité Informatique</h3>
             <p class="mb-3">
-              Je me jette dans les hautes herbes au bord du ruisseau pendant que
-              je m'allonge proche de la terre.
-            </p>
-            <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
-          </div>
-          <div
-            class="grid-item hover:translate-x-1 duration-500 hover:bg-primary cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
-          >
-            <i class="bi bi-list text-5xl to text-primary hover:text-white"></i>
-            <h3 class="text-2xl font-bold my-4">App Development</h3>
-            <p class="mb-3">
-              Je me jette dans les hautes herbes au bord du ruisseau pendant que
-            </p>
-            <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
-          </div>
-          <div
-            class="grid-item hover:bg-primary hover:translate-x-1 duration-500 cursor-pointer hover:text-white rounded-md shadow-lg border p-10"
-          >
-            <i class="bi bi-list text-5xl text-primary to"></i>
-            <h3 class="text-2xl font-bold my-4">App Development</h3>
-            <p class="mb-3">
-              Je me jette dans les hautes herbes au bord du ruisseau pendant que
-              je m'allonge proche de la terre.
+              Protection des données et des systèmes pour une sécurité
+              renforcée.
             </p>
             <i class="bi bi-arrow-right text-3xl bot text-[#ECF0F3]"></i>
           </div>
         </div>
       </section>
       <!-- portfolio -->
-      <section id="portfolio" class="container my-16">
+      <section id="portfolio" class="container my-16 section-item">
         <p class="text-primary text-center">
           Visitez mon portfolio et conservez vos commentaires
         </p>
@@ -269,7 +287,7 @@
             </div>
             <h3 class="text-2xl font-bold hover:text-primary mt-2">
               <a href=""
-                >Application web
+                >Application mobile
                 <span class="text-xl hidden text-primary"
                   ><i class="bi bi-arrow-up-right"></i></span
               ></a>
@@ -290,7 +308,7 @@
             </div>
             <h3 class="text-2xl font-bold hover:text-primary mt-2">
               <a href=""
-                >Application web
+                >Site vitrine
                 <span class="text-xl hidden text-primary"
                   ><i class="bi bi-arrow-up-right"></i></span
               ></a>
@@ -311,7 +329,7 @@
             </div>
             <h3 class="text-2xl font-bold hover:text-primary mt-2">
               <a href=""
-                >Application web
+                >Site vitrine
                 <span class="text-xl hidden text-primary"
                   ><i class="bi bi-arrow-up-right"></i></span
               ></a>
@@ -362,7 +380,7 @@
         </div>
       </section>
       <!-- contact -->
-      <section id="contact" class="container my-16">
+      <section id="contact" class="container my-16 section-item">
         <h4 class="text-primary uppercase font-bold text-center">Contact</h4>
         <p class="text-center text-3xl font-bold">Contactez-moi</p>
         <div class="md:flex gap-8 mt-12">
@@ -371,7 +389,7 @@
           >
             <img
               src="images/contact1.png"
-              class="rounded-[13px] h-60 w-full object-cover object-center mb-8"
+              class="rounded-[13px] h-60 w-full object-cover object-center mb-8 duration-300 cursor-pointer"
               alt=""
             />
             <h2 class="text-3xl font-bold mb-3">Anani Kokouvi Yovo</h2>
@@ -481,6 +499,9 @@
         </div>
       </section>
     </main>
+
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> -->
   </body>
 </html>

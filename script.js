@@ -20,13 +20,45 @@ $(document).ready(function () {
       deskMenu.removeClass("fixed");
     }
   });
+
+  // slick carrousel
+
+  $(".owl-carousel").owlCarousel({ items: 4, loop: true, autoplay: true });
 });
+
+//
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+$(window)
+  .scroll(function () {
+    var lastElem = null;
+
+    $(".section-item").each(function (i) {
+      if ($(this).isInViewport()) {
+        lastElem = $(this);
+      }
+    });
+
+    if (lastElem != null) {
+      console.clear();
+      console.log(lastElem.attr("id"));
+    }
+  })
+  .scroll();
 
 // javascript
 window.onresize = function () {
-  if (window.innerHeight >= 820) {
+  if (window.innerHeight >= 850) {
     /* ... */
   }
+
   if (window.innerWidth <= 1280) {
     /* ... */
   }
